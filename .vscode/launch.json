@@ -1,0 +1,128 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "EscapeTheBuilding (Debug)",
+			"request": "launch",
+			"preLaunchTask": "EscapeTheBuilding Win64 Debug Build",
+			"program": "D:\\Unreal Projects\\EscapeTheBuilding\\Binaries\\Win64\\UE4-Win64-Debug.exe",
+			"args": [
+			],
+			"cwd": "D:\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "EscapeTheBuilding (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "EscapeTheBuilding Win64 DebugGame Build",
+			"program": "D:\\Unreal Projects\\EscapeTheBuilding\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
+			"args": [
+			],
+			"cwd": "D:\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "EscapeTheBuilding (Development)",
+			"request": "launch",
+			"preLaunchTask": "EscapeTheBuilding Win64 Development Build",
+			"program": "D:\\Unreal Projects\\EscapeTheBuilding\\Binaries\\Win64\\UE4.exe",
+			"args": [
+			],
+			"cwd": "D:\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "EscapeTheBuilding (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "EscapeTheBuilding Win64 Shipping Build",
+			"program": "D:\\Unreal Projects\\EscapeTheBuilding\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
+			"args": [
+			],
+			"cwd": "D:\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "EscapeTheBuilding (Test)",
+			"request": "launch",
+			"preLaunchTask": "EscapeTheBuilding Win64 Test Build",
+			"program": "D:\\Unreal Projects\\EscapeTheBuilding\\Binaries\\Win64\\UE4-Win64-Test.exe",
+			"args": [
+			],
+			"cwd": "D:\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "EscapeTheBuildingEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "EscapeTheBuildingEditor Win64 Debug Build",
+			"program": "D:\\Epic Games\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
+			"args": [
+				"D:\\Unreal Projects\\EscapeTheBuilding\\EscapeTheBuilding.uproject"
+			],
+			"cwd": "D:\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "EscapeTheBuildingEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "EscapeTheBuildingEditor Win64 DebugGame Build",
+			"program": "D:\\Epic Games\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor-Win64-DebugGame.exe",
+			"args": [
+				"D:\\Unreal Projects\\EscapeTheBuilding\\EscapeTheBuilding.uproject"
+			],
+			"cwd": "D:\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "EscapeTheBuildingEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "EscapeTheBuildingEditor Win64 Development Build",
+			"program": "D:\\Epic Games\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+			"args": [
+				"D:\\Unreal Projects\\EscapeTheBuilding\\EscapeTheBuilding.uproject"
+			],
+			"cwd": "D:\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "clr",
+			"request": "launch",
+			"program": "D:\\Epic Games\\UE_4.25\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe",
+			"console": "externalTerminal",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"D:\\Unreal Projects\\EscapeTheBuilding\\EscapeTheBuilding.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "D:\\Epic Games\\UE_4.25"
+		}
+	]
+}
