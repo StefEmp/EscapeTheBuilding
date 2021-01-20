@@ -19,10 +19,13 @@ UWorldPosition::UWorldPosition()
 void UWorldPosition::BeginPlay()
 {
 	Super::BeginPlay();
+	//get the name of our objects using pointers
+	FString ObjectName = GetOwner()->GetName();
+	UE_LOG(LogTemp, Warning, TEXT("Object name is: %s"), *GetOwner()->GetName());
 	
-	 //FString ObjectName = GetOwner()->GetName();
-	 UE_LOG(LogTemp, Warning, TEXT("Object name is: %s"), *GetOwner()->GetName());
-	 
+	//getting actor location using pointers
+	FString ObjectPosition = GetOwner()->GetActorLocation().ToString();
+	UE_LOG(LogTemp, Warning, TEXT("%s is at position: %s"), *ObjectName, *ObjectPosition);
 }
 
 
