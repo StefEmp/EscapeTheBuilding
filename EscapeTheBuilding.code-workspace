@@ -10,7 +10,13 @@
 		}
 	],
 	"settings": {
-		"typescript.tsc.autoDetect": "off"
+		"typescript.tsc.autoDetect": "off",
+		"files.associations": {
+			"functional": "cpp",
+			"__functional_03": "cpp",
+			"__tree": "cpp",
+			"set": "cpp"
+		}
 	},
 	"extensions": {
 		"recommendations": [
