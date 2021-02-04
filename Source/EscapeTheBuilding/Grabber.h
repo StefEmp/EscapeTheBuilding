@@ -8,7 +8,6 @@
 #include "Components/InputComponent.h"
 #include "Grabber.generated.h"
 
-
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class ESCAPETHEBUILDING_API UGrabber : public UActorComponent
 {

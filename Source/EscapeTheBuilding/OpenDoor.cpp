@@ -17,7 +17,6 @@ UOpenDoor::UOpenDoor()
 	// ...
 }
 
-
 // Called when the game starts
 void UOpenDoor::BeginPlay()
 {
@@ -29,10 +28,7 @@ void UOpenDoor::BeginPlay()
 	if(!PressurePlate)
 	{
 		UE_LOG(LogTemp, Error, TEXT("&s has the open door component on it, but no pressureplate set!"), *GetOwner()->GetName())
-
 	}
-
-	ActorThatOpens = GetWorld()->GetFirstPlayerController()->GetPawn();
 }
 
 
@@ -78,6 +74,7 @@ float UOpenDoor::TotalMassOfActors() const
 
 	//Find All Overlapping Actors.
 	TArray<AActor*> OverlappingActors;
+	if(!PressurePlate){return TotalMass;}
 	PressurePlate->GetOverlappingActors(OUT OverlappingActors);
 	// Add up their masses
 
